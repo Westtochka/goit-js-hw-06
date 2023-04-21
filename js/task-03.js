@@ -12,3 +12,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const stringCode=images.map((image)=>`<li><img src="${image.url}"alt="${image.alt}"width=500</li>`).join('');
+const galaryUl=document.querySelector('ul')
+galaryUl.insertAdjacentHTML('afterbegin', stringCode);
+console.log(stringCode)
+
+
